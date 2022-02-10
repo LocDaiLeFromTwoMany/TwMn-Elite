@@ -3,7 +3,7 @@ const params = (new URL(location)).searchParams;
 var stravaCode = params.get('code');
 
 
-var obj = {code: stravaCode};
+var obj = { "code": stravaCode };
 
 $.ajax({
     method: 'post',
