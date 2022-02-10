@@ -12,7 +12,7 @@ $.ajax({
     processData: false,
     contentType: false,
     success: function() {
-        alert(code);
+        alert(stravaCode);
     },
     error: function() {
         alert("This alert box was called with the onload event");
