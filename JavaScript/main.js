@@ -11,11 +11,10 @@ $.ajax({
     data: formData,
     processData: false,
     contentType: false,
-}).then((result) => {
-    if (result.success) {
+    success: function() {
         alert(code);
-    }
-    else {
+    },
+    error: function() {
         alert("This alert box was called with the onload event");
     }
 });
